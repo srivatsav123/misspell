@@ -13,6 +13,7 @@ func ByteToUpper(x byte) byte {
 // ByteToLower converts an ascii byte to lower case
 // uses a branchless algorithm
 func ByteToLower(eax byte) byte {
+fmt.Println("hello manju")
 	ebx := eax&byte(0x7f) + byte(0x25)
 	ebx = ebx&byte(0x7f) + byte(0x1a)
 	ebx = ((ebx & ^eax) >> 2) & byte(0x20)
